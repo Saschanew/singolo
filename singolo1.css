@@ -2,19 +2,41 @@ body {
 	font-family: Lato, sans-serif;
 	padding: 0;
 	margin: 0;
-	color: #f2f2f2;
+    color: #f2f2f2;
+    width: 1030px;
+    margin: auto;
 }
 
 header {
     background-color: #2d303a;
+    height: 89px;
+}
+
+.logo h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 28px;
 }
 
 .logo {
-    font-size: 25px;
-    text-transform: uppercase;
+    display: flex; 
+    margin-left: 0px;
 }
 
-.color_light_red{
+.color_light_red, .hover_light_red {
     color: #f06c64;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 40px 0 40px;
+    height: 89px;
+}
+
+nav {
+    text-transform: uppercase;
+    margin-right: 0px;
 }
 
