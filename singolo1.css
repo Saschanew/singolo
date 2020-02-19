@@ -12,10 +12,16 @@ header {
     height: 89px;
 }
 
+.shadow_header {
+    background-color: #323746;
+    height: 6px;
+}
+
 .logo h1 {
     font-size: 25px;
     text-transform: uppercase;
     margin-top: 28px;
+    font-weight: bold;
 }
 
 .logo {
@@ -23,20 +29,39 @@ header {
     margin-left: 0px;
 }
 
-.color_light_red, .hover_light_red {
+.color_light_red, .hover_light_red, a:hover {
     color: #f06c64;
 }
 
 .wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin: 0 40px 0 40px;
     height: 89px;
 }
 
-nav {
-    text-transform: uppercase;
+nav {  
     margin-right: 0px;
+    width: 372px;
 }
+
+nav ul {
+    margin-top: 45px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";  
+    color:#323746;
+    font-weight: bold; 
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 
