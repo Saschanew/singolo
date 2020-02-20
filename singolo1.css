@@ -12,7 +12,7 @@ header {
     height: 89px;
 }
 
-.shadow_header {
+.shadow {
     background-color: #323746;
     height: 6px;
 }
@@ -35,9 +35,16 @@ header {
 
 .wrapper {
     display: flex;
-    justify-content: space-between;
     margin: 0 40px 0 40px;
-    height: 89px;
+}
+
+.wrapper_header {
+    justify-content: space-between;
+}
+
+.wrapper_services {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 nav {  
@@ -64,4 +71,69 @@ ul li::before {
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
   }
+
+  .promo {
+    background-color: #f06c64;
+    height: 594px;
+  }
+
+  .color_shadow_promo {
+      background-color: #ea676b;
+  }
+
+  .phone_vertical img {
+    margin-top: 53px;
+  }
+
+  .services {
+    background-color: #f2f2f2;
+    height: 494px;
+  }
+
+  .color_shadow_services {
+    background-color: #fff;
+}
+
+.description {
+    height: 220px;
+}
+
+.options {
+    height: 274px;
+    width: 100%;
+}
+
+.description h1 {
+    font-size: 30px;
+    margin-top: 28px;
+    font-family: Lato Black;
+    color: #666d89;
+}
+
+.description p {
+    font-size: 18px;
+    margin-top: 28px;
+    font-family: Lato Light;
+    color: #767e9e;
+    line-height: 30px;
+}
+
+.options ul {
+    width: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: space-between;
+}
+
+.options li {
+    display: inline; 
+    margin-right: 5px; 
+    padding: 3px;
+}
+
+
+
 
