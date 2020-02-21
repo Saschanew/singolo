@@ -1,13 +1,16 @@
 body {
 	font-family: Lato, sans-serif;
 	padding: 0;
-	margin: 0;
+	margin: auto;
     color: #f2f2f2;
-    width: 1030px;
-    margin: auto;
+    width: 1020px;
 }
 
-header {
+.header, main {
+    overflow: hidden;
+}
+
+.header {
     background-color: #2d303a;
     height: 89px;
 }
@@ -42,9 +45,14 @@ header {
     justify-content: space-between;
 }
 
+.wrapper_promo {
+    height: 100%;
+}
+
 .wrapper_services {
     flex-direction: column;
     align-items: flex-start;
+    height: 100%;
 }
 
 nav {  
@@ -63,13 +71,12 @@ nav ul {
     list-style: none;
 }
 
-ul li::before {
-    content: "\2022";  
-    color:#323746;
-    font-weight: bold; 
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+nav ul li::before {
+    content: "\00b7";  
+    color:#494e62; 
+    display: inline-block; 
+    width: 17px; 
+    margin-left: -1em; 
   }
 
   .promo {
@@ -98,16 +105,13 @@ ul li::before {
     height: 220px;
 }
 
-.options {
-    height: 274px;
-    width: 100%;
-}
-
 .description h1 {
     font-size: 30px;
     margin-top: 28px;
     font-family: Lato Black;
     color: #666d89;
+    margin-top: 67px;
+    margin-bottom: 0px;
 }
 
 .description p {
@@ -118,22 +122,50 @@ ul li::before {
     line-height: 30px;
 }
 
+.options {
+    height: 274px;
+    width: 100%;
+}
+
 .options ul {
     width: 100%;
     display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-block-start: 0px;
+    padding-inline-start: 0px;
 }
 
 .options li {
-    display: inline; 
-    margin-right: 5px; 
-    padding: 3px;
+    display: flex; 
+    padding-left: 0px;
+    width: 31%;
+    padding-top: 0px;
 }
 
+.options li h3{
+    color: #666d89;
+}
 
+.options li p{
+    color: #767e9e;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.options li div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.options li img {
+    vertical-align: top
+}
+
+.li_margin_between {
+    margin-left: 20px;
+}
 
 
