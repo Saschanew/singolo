@@ -23,8 +23,9 @@ body {
 .logo h1 {
     font-size: 25px;
     text-transform: uppercase;
-    margin-top: 28px;
+    margin-top: 29px;
     font-weight: bold;
+    letter-spacing: -1px;
 }
 
 .logo {
@@ -57,26 +58,28 @@ body {
 
 nav {  
     margin-right: 0px;
-    width: 372px;
+    width: 376px;
 }
 
 nav ul {
-    margin-top: 45px;
+    margin-top: 43px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
+    padding-top: 0px;
     list-style: none;
 }
 
-nav ul li::before {
+nav ul li:not(:nth-child(1))::before {
     content: "\00b7";  
     color:#494e62; 
     display: inline-block; 
     width: 17px; 
     margin-left: -1em; 
+    padding-top: 0px;
   }
 
   .promo {
@@ -88,8 +91,55 @@ nav ul li::before {
       background-color: #ea676b;
   }
 
-  .phone_vertical img {
+  .phone_vertical, .phone_horizontal {
+    display: flex;
+  }
+
+  .phone_vertical {
+      margin-left: 72px;
+  }
+
+  .phone_horizontal {
+    margin-left: 194px;
+    margin-top: 52px;
+}
+
+  #phone_vertical {
     margin-top: 53px;
+    width: 215px;
+    height: 458px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  #phone_horizontal {
+    transform: rotate(90deg);
+    width: 215px;
+    height: 458px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .vertical_img {
+    background-image: url("assets/phone_vertical/phone_image_vertical.png");
+    background-repeat: no-repeat;
+    width: 188px;
+    height: 333px;
+    position: absolute;
+    z-index: 3;
+    margin-left: 13px;
+    margin-top: 118px;
+  }
+
+  .horizontal_img {
+    background-image: url("assets/phone_horizontal/phone_image_horizontal.png");
+    background-repeat: no-repeat;
+    width: 333px;
+    height: 188px;
+    position: absolute;
+    z-index: 3;
+    margin-left: -62px;
+    margin-top: 136px;
   }
 
   .services {
@@ -101,25 +151,35 @@ nav ul li::before {
     background-color: #fff;
 }
 
+#shadow_vertical {
+    margin-top: 53px;
+}
+
+#shadow_horizontal {
+    margin-left: -120px;
+    margin-top: 123px;
+}
+
 .description {
     height: 220px;
 }
 
 .description h1 {
     font-size: 30px;
-    margin-top: 28px;
     font-family: Lato Black;
     color: #666d89;
-    margin-top: 67px;
+    margin-top: 60px;
     margin-bottom: 0px;
 }
 
 .description p {
     font-size: 18px;
-    margin-top: 28px;
-    font-family: Lato Light;
+    font-weight: lighter;
+    margin-top: 18px;
+    font-family: Lato;
     color: #767e9e;
     line-height: 30px;
+    letter-spacing: 0.15px;
 }
 
 .options {
@@ -143,14 +203,20 @@ nav ul li::before {
     padding-top: 0px;
 }
 
-.options li h3{
+.options li h3 {
     color: #666d89;
+    margin-top: -1px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-.options li p{
+.options li p {
     color: #767e9e;
     margin-top: 0px;
     font-size: 12px;
+    line-height: 180%;
+    word-wrap: break-word;
+    font-weight: normal;
 }
 
 .options li div {
@@ -161,11 +227,26 @@ nav ul li::before {
 }
 
 .options li img {
-    vertical-align: top
+    vertical-align: top;
+    height: 60px;
+    width: 60px;
 }
 
-.li_margin_between {
-    margin-left: 20px;
+.li_margin_between_second {
+    margin-left: 27px;
 }
 
+.li_margin_between_third {
+    margin-left: 30px;
+}
+
+#second_row {
+    margin-top: 10px;
+}
+
+.second_row {
+    margin-top: 15px;
+}
+    
+   
 

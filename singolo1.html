@@ -14,10 +14,10 @@
             <nav>
                 <ul class="navigation">
                     <li><a>Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Contact</a></li>
+                    <li class="dot"><a>Services</a></li>
+                    <li class="dot"><a>Portfolio</a></li>
+                    <li class="dot"><a>About</a></li>
+                    <li class="dot"><a>Contact</a></li>
                 </ul>
             </nav>
         </div>     
@@ -27,13 +27,15 @@
         <section class="promo">
             <div class="wrapper wrapper_promo">
                 <div class="phone_vertical">
-                    <img src="assets/phone.svg">
-                    <img src="assets/phone_vertical/phone_image_vertical.svg">
+                    <div class="vertical"><img src="assets/phone.svg" id="phone_vertical"></div>
+                    <div id="shadow_vertical"><img src="assets/phone_vertical/shadow_vertical.png"></div>
+                    <div class="vertical_img"></div>
                 </div>
-                <viv class="phone_horizontal">
-                    <img src="assets/phone.svg">
-                    <img src="assets/phone_horizontal/phone_image_horizontal.svg">
-                </viv>
+                <div class="phone_horizontal">
+                    <div class="horizontal"><img src="assets/phone.svg" id="phone_horizontal"></div>
+                    <div id="shadow_horizontal"><img src="assets/phone_horizontal/shadow_horizontal.png"></div>
+                    <div class="horizontal_img"></div>
+                </div>
             </div>
         </section>
         <div class="shadow color_shadow_promo"></div>
@@ -53,38 +55,38 @@
                                 <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                             </div>
                         </li>
-                        <li class="li_margin_between">
+                        <li class="li_margin_between_second">
                             <img src="assets/services_2.svg" height="120">
                             <div>
                                 <h3>Inovative Ideas</h3>
                                 <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                             </div>
                         </li>
-                        <li class="li_margin_between">
-                            <img src="assets/services_2.svg" height="120">
+                        <li class="li_margin_between_third">
+                            <img src="assets/services_3.svg" height="120">
                             <div>
                                 <h3>Love Is The Answer</h3>
                                 <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="assets/services_4.svg" height="120">
+                            <img class="second_row" src="assets/services_4.svg" height="120">
                             <div>
-                                <h3>Responsive Layout</h3>
+                                <h3 id="second_row">Responsive Layout</h3>
                                 <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
                             </div>
                         </li>
-                        <li class="li_margin_between">
-                            <img src="assets/services_5.svg" height="120">
+                        <li class="li_margin_between_second">
+                            <img class="second_row" src="assets/services_5.svg" height="120">
                             <div>
-                                <h3>24 / 7 Support</h3>
+                                <h3 id="second_row">24 / 7 Support</h3>
                                 <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
                             </div>
                         </li>
-                        <li class="li_margin_between">
-                            <img src="assets/services_6.svg" height="120">
+                        <li class="li_margin_between_third">
+                            <img class="second_row" src="assets/services_6.svg" height="120">
                             <div>
-                                <h3>Feel Like A Star</h3>
+                                <h3 id="second_row">Feel Like A Star</h3>
                                 <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                             </div>
                         </li>
