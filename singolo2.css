@@ -6,6 +6,11 @@ body {
     width: 1020px;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .portfolio {
     background-color: #2d303a;
     height: 864px;
@@ -21,11 +26,39 @@ body {
     height: 728px;
 }
 
-.wrapper {
-    display: flex;
-    margin: 0 40px 0 40px;
-}
-
 .color_shadow_about {
     background-color: #fff;
+}
+
+h1 {
+    font-size: 30px; 
+    color: #666d89;
+}
+
+.main, h3 {
+    font-size: 18px;
+    color: #767e9e;
+}
+
+button {
+    font-size: 12px;
+    color: #767e9e; 
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.middle {
+    font-size: 12px;
+    color: #767e9e; 
+}
+
+.portfolio_pictures, .about_us_pictures {
+    display: flex;
+}
+
+.portfolio_pictures {
+    flex-wrap: wrap;
+    align-content: space-between;
 }
