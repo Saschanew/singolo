@@ -9,11 +9,22 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
+    margin: 0 40px 0 40px;
 }
 
 .portfolio {
     background-color: #2d303a;
     height: 864px;
+}
+
+.text_portfolio {
+    margin-top: 34px;
+    margin-bottom: 16px;
+}
+
+.portfolio_pictures {
+    height: 602px;
+    overflow: hidden;
 }
 
 .shadow {
@@ -31,8 +42,10 @@ body {
 }
 
 h1 {
-    font-size: 30px; 
+    font-size: 30px;
+    font-weight: 900; 
     color: #666d89;
+    margin-bottom: 20px;
 }
 
 .main, h3 {
@@ -40,9 +53,25 @@ h1 {
     color: #767e9e;
 }
 
+.buttons {
+    width: 288px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
 button {
     font-size: 12px;
     color: #767e9e; 
+    background-color: #2d303a;
+    border-radius: 5px;
+    border: 1px solid #767e9e;
+    padding: 3px 6px 3px 6px;
+}
+
+button:hover {
+    color: #c5c5c5;
+    border: 1px solid #c5c5c5;
 }
 
 .bold {
@@ -56,9 +85,52 @@ button {
 
 .portfolio_pictures, .about_us_pictures {
     display: flex;
+    justify-content: space-between;
 }
 
 .portfolio_pictures {
     flex-wrap: wrap;
     align-content: space-between;
+}
+
+.portfolio_pictures img {
+    margin-bottom: 20px;
+} 
+
+.text_about {
+    margin-top: 32px;
+}
+
+.text_about span {
+    line-height: 30px;
+}
+
+.about_us_pictures {
+    margin-top: 44px;
+}
+
+.first_picture, .second_picture, .third_picture {
+    width: 300px;
+    height: 300px;
+}
+
+h3 {
+    margin-top: 12px;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+.social_networks {
+    margin-top: 28px;
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_networks img:hover {
+    height: 42px;
+}
+
+.about_us_pictures h3 {
+    white-space: nowrap;
 }
