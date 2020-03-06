@@ -20,9 +20,70 @@ body {
 .shadow {
     background-color: #ea676b;
     height: 6px;
+    background-image: src("image.jpg");
 }
 
 .footer {
     background-color: #2d303a;
     height: 76px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #f0d8d9;
+}
+
+span {
+    font-size: 18px;
+    color: #f0d8d9;
+}
+
+input, textarea {
+    background-color: #d6564f;
+    border: 0px;
+    width: 619px;
+}
+
+.form {
+    width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form_form {
+    width: 619px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 364px;
+    justify-content: space-between;
+}
+
+.contact {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    height: 38px;
+}
+
+textarea {
+    height: 202px;
+}
+
+::placeholder {
+    color: #f48c8f;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+}
+
+.contact_h4 {
+    width: 165px;
+}
+
+.contact_span {
+    font-size: 12px;
+    width: 300px;
 }
