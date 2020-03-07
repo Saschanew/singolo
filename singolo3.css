@@ -1,7 +1,7 @@
 body {
 	font-family: Lato, sans-serif;
 	padding: 0;
-	margin: 0;
+	margin: auto;
     color: #f2f2f2;
     width: 1020px;
 }
@@ -31,17 +31,22 @@ body {
 h3 {
     font-size: 30px;
     color: #f0d8d9;
+    margin-top: 60px;
+    margin-bottom: 18px;
 }
 
-span {
+.span_quote {
     font-size: 18px;
     color: #f0d8d9;
+    line-height: 30px;
 }
 
 input, textarea {
     background-color: #d6564f;
     border: 0px;
     width: 619px;
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
 .form {
@@ -49,13 +54,15 @@ input, textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 42px 0px 0px 0px;
+    height: 424px;
 }
 
 .form_form {
     width: 619px;
     display: flex;
     flex-wrap: wrap;
-    height: 364px;
+    height: 424px;
     justify-content: space-between;
 }
 
@@ -63,6 +70,7 @@ input, textarea {
     width: 300px;
     display: flex;
     flex-wrap: wrap;
+    height: 205px;
 }
 
 input {
@@ -71,6 +79,8 @@ input {
 
 textarea {
     height: 202px;
+    vertical-align: bottom;
+    padding-top: 10px;
 }
 
 ::placeholder {
@@ -81,9 +91,91 @@ textarea {
 
 .contact_h4 {
     width: 165px;
+    font-size: 18px;
+    height: 30px;
 }
 
-.contact_span {
+.contact_h4 h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact_span span, .contact_img span {
     font-size: 12px;
     width: 300px;
+}
+
+.contact_img {
+    display: flex;
+    width: 300px;
+}
+
+.contact_img span {
+    padding-top: 5px;
+}
+
+.img_location {
+    margin: auto;
+    width: 7px;
+}
+
+.img_phone {
+    margin: auto;
+    width: 11px;
+}
+
+.img_mail {
+    margin: auto;
+    width: 13px;
+}
+
+.wrapper_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.contact_span span {
+    margin-top: 0px;
+    line-height: 20px;
+}
+
+.contact_img span {
+    margin-left: 10px;
+}
+
+.wrapper_qoute {
+    padding-bottom: 0px;
+}
+
+#submit {
+    color: #3d3d3d;
+    width: 80px;
+    border: 1px solid #cccccc;
+    padding-left: 5px;
+}
+
+#contact_block {
+    padding-bottom: 0px;
+    height: 55px;
+}
+
+a {
+    color: #f0d8d9;
+}
+
+.social_media {
+    width: 152px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.copyright {
+    margin-top: 26px;
+}
+
+.copyright img {
+    width: 92px;
 }
