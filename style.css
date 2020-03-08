@@ -8,7 +8,7 @@ body {
 
 /*first page*/
 
-.header, main {
+.header, .main_first_page {
     overflow: hidden;
 }
 
@@ -18,8 +18,11 @@ body {
 }
 
 .shadow {
-    background-color: #323746;
     height: 6px;
+}
+
+.shadow_header {
+    background-color: #323746;
 }
 
 .logo h1 {
@@ -28,6 +31,7 @@ body {
     margin-top: 29px;
     font-weight: bold;
     letter-spacing: -1px;
+    color: #fff;
 }
 
 .logo {
@@ -98,12 +102,16 @@ nav ul li:not(:nth-child(1))::before {
   }
 
   .phone_vertical {
-      margin-left: 72px;
+      margin-left: 56px;
   }
 
   .phone_horizontal {
     margin-left: 194px;
     margin-top: 52px;
+}
+
+.chev_right {
+    margin-left: 56px;
 }
 
   #phone_vertical {
@@ -121,6 +129,12 @@ nav ul li:not(:nth-child(1))::before {
     position: absolute;
     z-index: 2;
   }
+
+  .chev_left, .chev_right {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+}
 
   .vertical_img {
     background-image: url("assets/phone_vertical/phone_image_vertical.png");
@@ -252,6 +266,12 @@ nav ul li:not(:nth-child(1))::before {
 
 /*second page*/
 
+.wrapper_portfolio, .warapper_bout {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 40px;
+}
+
 .portfolio {
     background-color: #2d303a;
     height: 864px;
@@ -267,9 +287,8 @@ nav ul li:not(:nth-child(1))::before {
     overflow: hidden;
 }
 
-.shadow {
+.shadow_portfolio {
     background-color: #323746;
-    height: 6px;
 }
 
 .about {
@@ -288,7 +307,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.main, h3 {
+.span_second_page, h3 {
     font-size: 18px;
     color: #767e9e;
 }
@@ -314,8 +333,13 @@ button:hover {
     border: 1px solid #c5c5c5;
 }
 
+#chev_left:hover, #chev_right:hover {
+    height: 35px;
+}
+
 .bold {
     font-weight: bold;
+    color: #666d89;
 }
 
 .middle {
@@ -376,15 +400,13 @@ h3 {
 }
 
 /*third page*/
-.main {
+.main_third_page {
     background-color: #f06c64;
     height: 648px;
 }
 
-.shadow {
+.shadow_quote {
     background-color: #ea676b;
-    height: 6px;
-    background-image: src("image.jpg");
 }
 
 .footer {
@@ -392,7 +414,7 @@ h3 {
     height: 76px;
 }
 
-h3 {
+.h3_third_page {
     font-size: 30px;
     color: #f0d8d9;
     margin-top: 60px;
@@ -510,6 +532,8 @@ textarea {
 
 .wrapper_qoute {
     padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 #submit {
